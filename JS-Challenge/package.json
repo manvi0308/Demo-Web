@@ -1,6 +1,0 @@
-{
-  "devDependencies": {
-    "react-styleguidist": "^11.1.7",
-    "webpack": "^5.58.2"
-  }
-}
