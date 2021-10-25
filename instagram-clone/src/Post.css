@@ -1,0 +1,45 @@
+.post {
+    background-color: white;
+    max-width: 500px;
+    border: 1px solid lightgray;
+  
+    /* To ensure space between two posts*/
+    margin-bottom: 45px;
+  }
+  
+  .post__image {
+    width: 100%;
+    object-fit: contain;
+    /*
+      Using the combination of above two lines 
+      will make the image size responsive
+      no matter what the screen size is 
+      however we have used max-width in .post, this will make 
+      the maximum width of the container to 500px
+    */
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .post__text {
+    /* This is done so that the caption should not be bold, 
+      note that we have already made the name of the person 
+      bold using strong tag in the js file */
+    font-weight: normal;
+    padding: 20px;
+  }
+  
+  .post__header {
+    padding: 20px;
+    /* Space surrounding*/
+    display: flex;
+    align-items: center;
+  
+    /* Aligns the item correctly and the name and avatar
+    in one straight line */
+  }
+  
+  .post__avatar {
+    margin-right: 10px;
+  }
+  

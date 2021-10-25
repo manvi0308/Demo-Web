@@ -1,9 +1,8 @@
 import firebase from "firebase";
 const firebaseApp = firebase.initializeApp({
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   apiKey: "AIzaSyDVO4uRTkpEG48UdhlP10ANeFF_scsAYQc",
   authDomain: "insta-clone-dee6d.firebaseapp.com",
-  databaseURL: "https://insta-clone-dee6d.firebaseio.com",
+  databaseURL: "https:://insta-clone-dee6d.firebaseio.com",
   projectId: "insta-clone-dee6d",
   storageBucket: "insta-clone-dee6d.appspot.com",
   messagingSenderId: "67233139537",
@@ -15,4 +14,4 @@ const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const storage = firebase.storage();
 
-export { db, auth, storage };
+export {db, auth, storage};
