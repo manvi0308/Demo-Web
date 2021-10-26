@@ -14,7 +14,7 @@ function Post(props) {
       </div>
       <img className="post__image" src={props.userimage} alt="just something"></img>
       <h4 className="post__text">
-        {props.username}: {props.caption}
+       <strong>{props.username}</strong>: {props.caption}
       </h4>
     </div>
   );

@@ -2,15 +2,21 @@ import React, { useState, useEffect } from "react";
 import Post from "./Post";
 import "./App.css";
 import { db } from "./firebase";
-import firebase from 'firebase';
+import firebase from "firebase";
+// 1:19:57
 
 function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection('insta').onSnapshot(snapshot => {
-      setPosts(snapshot.docs.map(doc => doc.data()));
-    })
+    db.collection("insta").onSnapshot((snapshot) => {
+      setPosts(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          post: doc.data(),
+        }))
+      );
+    });
   }, []);
   return (
     <div className="app">
@@ -21,8 +27,9 @@ function App() {
         ></img>
       </div>
 
-      {posts.map((post) => (
+      {posts.map(({ id, post }) => (
         <Post
+          key={id}
           username={post.username}
           caption={post.caption}
           userimage={post.userimage}
