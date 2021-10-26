@@ -12,7 +12,7 @@ function Post(props) {
         />
         <h3>{props.username}</h3>
       </div>
-      <img className="post__image" src={props.userimage}></img>
+      <img className="post__image" src={props.userimage} alt="just something"></img>
       <h4 className="post__text">
         {props.username}: {props.caption}
       </h4>
