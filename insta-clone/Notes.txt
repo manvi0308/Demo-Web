@@ -1,0 +1,3 @@
+database connectivity is possible when import { db } from './firebase'
+import firebase from 'firebase'
+

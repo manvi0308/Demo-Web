@@ -1,4 +1,5 @@
 import firebase from "firebase";
+
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyDVO4uRTkpEG48UdhlP10ANeFF_scsAYQc",
   authDomain: "insta-clone-dee6d.firebaseapp.com",
@@ -13,5 +14,4 @@ const firebaseApp = firebase.initializeApp({
 const db = firebaseApp.firestore();
 const auth = firebaseApp.firestore();
 const storage = firebaseApp.storage();
-
-export default { db, auth, storage };
+export { db, auth, storage };
