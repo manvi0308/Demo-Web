@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     // this is where the code runs
     db.collection('insta').onSnapshot(snapshot => {
-      setPosts(snapshot.docs.map(doc => doc.data))
+      setPosts(snapshot.docs.map(doc => doc.data()))
     })
 
   }, []);
