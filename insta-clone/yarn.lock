@@ -1821,30 +1821,30 @@
     "prop-types" "^15.7.2"
     "react-is" "^16.8.0 || ^17.0.0"
 
-"@mui/core@5.0.0-alpha.51":
-  "integrity" "sha512-Dum1SM5qk9eGeC6TLw6Au/53yuHqpkFM65hFYEtZccjJhUtdQMve+XVsmhgYPNkhiC0HyWgIR8Q5E1q5Fkc+pQ=="
-  "resolved" "https://registry.npmjs.org/@mui/core/-/core-5.0.0-alpha.51.tgz"
-  "version" "5.0.0-alpha.51"
+"@mui/core@5.0.0-alpha.52":
+  "integrity" "sha512-L1A7bkWDu9BJCIOu4s5o46D+VaeCcNQJoe4CRIJnOJGihUnaOB861xg+ZTrfcqwmr8yxIOU8GucHozLxK1VMRQ=="
+  "resolved" "https://registry.npmjs.org/@mui/core/-/core-5.0.0-alpha.52.tgz"
+  "version" "5.0.0-alpha.52"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@emotion/is-prop-valid" "^1.1.0"
     "@mui/utils" "^5.0.1"
+    "@popperjs/core" "^2.4.4"
     "clsx" "^1.1.1"
     "prop-types" "^15.7.2"
     "react-is" "^17.0.2"
 
-"@mui/material@^5.0.4":
-  "integrity" "sha512-075EXSBHoEYeFkE5WDtXyxfd+bNIQRvqlgiouukvMqLGta1EmLq9H6+ONYV4I0Luug8NvNyRocVyRwdjH0Ufmw=="
-  "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.0.4.tgz"
-  "version" "5.0.4"
+"@mui/material@^5.0.5":
+  "integrity" "sha512-3AnGXf+jvQKEykR1fmaO0/5kyYNqRMT0Nbx3pnMTeqeV1LruBdha2JWc6A+/3ClgdhBHtfeHi1hvzgBbK2d6+A=="
+  "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.0.5.tgz"
+  "version" "5.0.5"
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@mui/core" "5.0.0-alpha.51"
-    "@mui/system" "^5.0.4"
+    "@mui/core" "5.0.0-alpha.52"
+    "@mui/system" "^5.0.5"
     "@mui/types" "^7.0.0"
     "@mui/utils" "^5.0.1"
-    "@popperjs/core" "^2.4.4"
-    "@types/react-transition-group" "^4.4.3"
+    "@types/react-transition-group" "^4.4.4"
     "clsx" "^1.1.1"
     "csstype" "^3.0.9"
     "hoist-non-react-statics" "^3.3.2"
@@ -1870,10 +1870,10 @@
     "@emotion/cache" "^11.4.0"
     "prop-types" "^15.7.2"
 
-"@mui/system@^5.0.4":
-  "integrity" "sha512-d+7dhT0eBGrPoah91GX1Q2i4S/5QsiVAp7e06lIMC/LXFWQSrsSnvNbVnW8TgttCvo0ypQ/RHNmWZ/f1eAbd/Q=="
-  "resolved" "https://registry.npmjs.org/@mui/system/-/system-5.0.4.tgz"
-  "version" "5.0.4"
+"@mui/system@^5.0.5":
+  "integrity" "sha512-T7kUYVivUxFfj6TQNXwjzBtGoBkwit7GCq9TvszGLO5P/fz5TETQWfUMLYku5rgg6oe44qlEQ9Jt7RYjNvjuPQ=="
+  "resolved" "https://registry.npmjs.org/@mui/system/-/system-5.0.5.tgz"
+  "version" "5.0.5"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@mui/private-theming" "^5.0.1"
@@ -2361,7 +2361,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-transition-group@^4.2.0", "@types/react-transition-group@^4.4.3":
+"@types/react-transition-group@^4.2.0", "@types/react-transition-group@^4.4.4":
   "integrity" "sha512-7gAPz7anVK5xzbeQW9wFBDg7G++aPLAFY0QaSMOou9rJZpbuI58WAuJrgu+qR92l61grlnCUe7AFX8KGahAgug=="
   "resolved" "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.4.tgz"
   "version" "4.4.4"
@@ -10023,20 +10023,15 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react-is@^16.8.0 || ^17.0.0", "react-is@^17.0.1":
-  "integrity" "sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA=="
-  "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
-  "version" "17.0.1"
+"react-is@^16.8.0 || ^17.0.0", "react-is@^17.0.1", "react-is@^17.0.2":
+  "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
+  "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
+  "version" "17.0.2"
 
 "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
-
-"react-is@^17.0.2":
-  "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
-  "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
-  "version" "17.0.2"
 
 "react-refresh@^0.8.3", "react-refresh@>=0.8.3 <0.10.0":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="

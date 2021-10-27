@@ -3,10 +3,14 @@ import Post from "./Post";
 import "./App.css";
 import { db } from "./firebase";
 import firebase from "firebase";
+import { Modal } from "@material-ui/core";
+
 // 1:19:57
 
 function App() {
   const [posts, setPosts] = useState([]);
+  const [open, setOpen] = useState([]);
+  const [close, setClose] = useState([]);
 
   useEffect(() => {
     db.collection("insta").onSnapshot((snapshot) => {
@@ -20,9 +24,18 @@ function App() {
   }, []);
   return (
     <div className="app">
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        <div>
+          <h2>I am a modal</h2>
+        </div>
+      </Modal>
       <div className="app__header">
         <img
           classsName="app__headerImage"
+          alt="Header picture"
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
         ></img>
       </div>
