@@ -1,3 +1,9 @@
 database connectivity is possible when import { db } from './firebase'
 import firebase from 'firebase'
 
+Material ui is working fine when using the import
+import { Modal } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+
+useStyles is a hook
