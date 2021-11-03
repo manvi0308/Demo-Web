@@ -114,12 +114,7 @@ function App() {
                 src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
               ></img>
             </center>
-            <Input
-              placeholder="username"
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+
             <Input
               placeholder="email"
               type="text"
@@ -132,6 +127,9 @@ function App() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <Button type="submit" onClick={signin}>
+              Sign In
+            </Button>
           </form>
         </div>
       </Modal>
@@ -144,11 +142,14 @@ function App() {
         ></img>
       </div>
       {/*! Login and signup button, this is just a fancy if else loop*/}
-      {
-        user? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
-        ): (<Button onClick={() => setOpen(true)}>Sign Up</Button>)
-      }
+      {user ? (
+        <Button onClick={() => auth.signOut()}>Logout</Button>
+      ) : (
+        <div className="app__loginContainer">
+          <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
+          <Button onClick={() => setOpen(true)}>Sign Up</Button>
+        </div>
+      )}
       {posts.map(({ id, post }) => (
         <Post
           key={id}
